@@ -4,15 +4,19 @@ while (true) {
     nomeCompleto = prompt("Digite o seu nome completo: ");
     anoNascimento = Number(prompt('Digite seu ano de nascimento:'));
 
-    if (anoNascimento >= 1922 && anoNascimento <= 2021) {
-        idade = 2021 - anoNascimento;
-        idadeNova = idade + 1;
-        break;
-    } else {
-        alert("Digite informações válidas (ano de nascimento entre 1922 e 2021).");
+    try {
+        if (anoNascimento >= 1922 && anoNascimento <= 2021) {
+            idade = 2021 - anoNascimento;
+            idadeNova = idade + 1;
+            break;
+        } else {
+            throw new Error("Ano de nascimento inválido. Digite um ano entre 1922 e 2021.");
+        }
+    } catch (error) {
+        alert('Ocorreu um erro: ' + error.message);
     }
 }
 
 alert("Nome: " + nomeCompleto + '\n' +
       "Idade: " + idade + '\n' +
-      "Você fará " + idadeNova + " anos esse ano.");
+      "Você fez/fará " + idadeNova + " anos esse ano.");
