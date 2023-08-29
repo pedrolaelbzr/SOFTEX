@@ -11,36 +11,36 @@
 </header>
 <body>
     <div class = "fundo">
-        <div id = "tela"></div>
+        <div id = "display"></div>
         <table>
         <tr>
-            <td> <button class = "top"> AC </button> </td>
-            <td> <button class = "top"> +|- </button> </td>
-            <td> <button class = "top"> % </button> </td>
-            <td> <button class = "op"> ÷ </button> </td>
+            <td> <button class = "top" onclick="clearDisplay()"> AC </button> </td>
+            <td> <button class = "top"onclick="changeOp('-')"> +|- </button> </td>
+            <td> <button class = "top" onclick="appendToDisplay('%')" > % </button> </td>
+            <td> <button class = "op" onclick="appendToDisplay('/')"> ÷ </button> </td>
         </tr>
         <tr>
-            <td> <button class = "button"> 7 </button> </td>
-            <td> <button class = "button"> 8 </button> </td>
-            <td> <button class = "button"> 9 </button> </td>
-            <td> <button class = "op"> x </button> </td>
+            <td> <button class = "button" onclick="appendToDisplay('7')"> 7 </button> </td>
+            <td> <button class = "button" onclick="appendToDisplay('8')"> 8 </button> </td>
+            <td> <button class = "button" onclick="appendToDisplay('9')"> 9 </button> </td>
+            <td> <button class = "op" onclick="appendToDisplay('x')"> x </button> </td>
         </tr>
         <tr>
-            <td> <button class = "button"> 4 </button> </td>
-            <td> <button class = "button"> 5 </button> </td>
-            <td> <button class = "button"> 6 </button> </td>
-            <td> <button class = "op"> - </button> </td>
+            <td> <button class = "button" onclick="appendToDisplay('4')"> 4 </button> </td>
+            <td> <button class = "button" onclick="appendToDisplay('5')"> 5 </button> </td>
+            <td> <button class = "button" onclick="appendToDisplay('6')"> 6 </button> </td>
+            <td> <button class = "op" onclick="appendToDisplay('-')"> - </button> </td>
         </tr>
         <tr>
-            <td> <button class = "button"> 1 </button> </td>
-            <td> <button class = "button"> 2 </button> </td>
-            <td> <button class = "button"> 3 </button> </td>
-            <td> <button class = "op"> + </button> </td>
+            <td> <button class = "button" onclick="appendToDisplay('1')"> 1 </button> </td>
+            <td> <button class = "button" onclick="appendToDisplay('2')"> 2 </button> </td>
+            <td> <button class = "button" onclick="appendToDisplay('3')"> 3 </button> </td>
+            <td> <button class = "op" onclick="appendToDisplay('+')"> + </button> </td>
         </tr>
         <tr>
             <td colspan="2"> <button class = "zero"> 0 </button> </td>
-            <td> <button class = "button"> , </button> </td>
-            <td> <button class = "op"> = </button> </td>
+            <td> <button class = "button" onclick="appendToDisplay('.')"> . </button> </td>
+            <td> <button class = "equal" onclick="calculate('')"> = </button> </td>
         </tr>
         </table>
     </div>
