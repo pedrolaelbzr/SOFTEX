@@ -14,6 +14,7 @@ body{
     text-align:right;
     color: #374145;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 
 table{
@@ -38,7 +39,7 @@ button.top{
     color:#374145;
 
 }
-    
+
 button{
     font-size: 25px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -61,4 +62,9 @@ button:active{
 }
 button.zero{
     width: 170px;
+}
+button.clear{
+    width: 255px;
+    background-color: #374145;
+    color:#D3C6AA;
 }
