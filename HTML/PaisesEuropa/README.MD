@@ -1,3 +1,2 @@
 # LP - PAISES DA EUROPA
-![](https://github.com/pedrolaelbzr/SOFTEX/assets/121199580/4746a9bd-1159-4db6-9fe6-ad652c3a148a
-)
+![Gravac_a_o-de-Tela-2023-08-31-a_s-11 43 31](https://github.com/pedrolaelbzr/SOFTEX/assets/121199580/ab7b9407-fcb0-4c17-a4f5-11de227da93d)
